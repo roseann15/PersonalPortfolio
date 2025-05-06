@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4e98520dfc.js" crossorigin="anonymous"></script></head>
+<body>
+    
+<!-- Header Section Start -->
+<div id="header">
+    <div class="container">
+        <nav class="navbar">
+            <a href="#header" class="logo"><span>r</span>osie</a>
+            <ul id="sidemenu">
+                <li><a href="#header"> Home</a></li>
+                <li><a href="#about"> About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio"> Portfolio</a></li>
+                <li><a href="#contact"> Contact</a></li>
+                <i class="fas fa-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Rose Ann</h1>
+             <p>A Computer Science Student. <br>I create meaningful and user-centered <br>digital experiences.</p>            </div>
+    </div>
+</div>
+   
+<!-- Header Section End -->
+
+    <!-- About Section Start -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/aboutme.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a passionate UI/UX designer and a Computer Science student from Bohol, Philippines. I enjoy turning complex problems into simple, beautiful, and intuitive designs.</p>
+
+                         <div class="tab-titles">
+                            <p class="tab-links active-link" onClick="opentab('skills')"><i class="fas fa-code"></i> Skills</p>
+                            <p class="tab-links" onClick="opentab('experience')"><i class="fas fa-briefcase"></i> Experience</p>
+                            <p class="tab-links" onClick="opentab('education')"><i class="fas fa-graduation-cap"></i> Education</p></div>
+                            <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>UI/UX</span><br>• Crafting intuitive and user-friendly web and mobile interfaces <br>• Creating low-fidelity wireframes and high-fidelity prototypes <br>• Tools: Figma, Adobe XD, Canva</li>
+                                <li><span>Web Development</span><br>• Building responsive and accessible web pages using HTML5, CSS3, JavaScript <br>• Basic JavaScript DOM manipulation and interactivity <br>• Styling with CSS Flexbox and Grid for layout efficiency</li>
+                                <li><span>App Development</span><br>• Designing and prototyping mobile applications <br>• Creating interactive app mockups <br>• Understanding UI consistency and mobile UX guidelines</li>
+                            </ul>
+                         </div> 
+                         <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2024 - Current</span><br>Designing web/app Interface</li>
+                                <li><span>2022 - 2023</span><br>Intern Web Designer</li>
+                                <li><span>2021 - 2022</span><br>Designed multiple academic projects focused on user interfaces using Figma</li>
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022 - Present</span><br>Bachelor of Science in Computer Science</li>
+                                <li><span>2021 - 2022</span><br>Guinsularan National High School</li>
+                                <li><span>2015 - 2016 </span><br>Guba Elementary School </li>
+                            </ul>
+                         </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section End -->
+    <!-- Services Section Start -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fas fa-code"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>I specialize in crafting intuitive and visually appealing user interfaces for both web and mobile applications. My design process focuses on enhancing usability, accessibility, and overall user satisfaction. From wireframes to high-fidelity prototypes, I ensure every element is purposeful and user-centered, using tools like Figma and Adobe XD to bring ideas to life.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-crop"></i>
+                    <h2>Web Development</h2>
+                    <p>I develop responsive and performance-optimized websites using the latest web technologies such as HTML, CSS, and JavaScript. My goal is to create web pages that look great on all devices and provide a smooth user experience. Whether it's a personal blog, a business landing page, or a small-scale web app, I build with clean code and usability in mind.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fas fa-app-store"></i>
+                    <h2>App Development</h2>
+                    <p>I design and prototype user-friendly mobile applications that align with modern UI/UX principles. My focus is on creating seamless user flows and aesthetically consistent designs. From concept sketches to interactive mockups, I turn ideas into engaging app interfaces ready for development.</p>
+                    <a href="#">Learn more</a>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Section End -->
+    <!-- Portfolio Section Start -->
+     <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Web.png" >
+                    <div class="layer">
+                        <h3>Tourist Spot Website</h3>
+                        <p>A travel-inspired website designed to showcase top tourist destinations in Cebu, Philippines, focusing on user-friendly navigation and immersive visuals. <br>• Features interactive sections for destinations, travel tips, and galleries. <br>• Built with HTML, CSS, and JavaScript for smooth scrolling and responsive design.
+                            <br>• Designed to encourage exploration with clean layouts and engaging content.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/agri.png" >
+                    <div class="layer">
+                        <h3>AgriConnect App</h3>
+                        <p>A mobile and web-based application that connects farmers and equipment owners in a seamless rental platform. <br>• Enables farmers to rent machinery and owners to list and manage their equipment.
+                            <br>• Includes real-time equipment availability, rental scheduling, and digital payment options. <br>• Developed to support agricultural communities and optimize farm productivity.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/marketplace.png" >
+                    <div class="layer">
+                        <h3>Bohol Marketplace Website</h3>
+                        <p>A localized online marketplace inspired by Facebook Marketplace, tailored for the Bohol community. <br> 
+                            • Users can buy, sell, and trade goods with nearby residents. <br>
+                            • Features product listings, search filters, chat functionality, and user verification. <br>
+                            • Designed with simplicity and accessibility in mind to promote community-based commerce.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn"> See more</a>
+        </div>
+     </div>
+
+<!-- Portfolio Section End -->
+    <!-- Contact Section Start -->
+     <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i>0912345678</p>
+                    <div class="social-icons">
+                        <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#https:/instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#https://twitter.com"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="images/mycv.pdf" download class="btn btn2">Download CV</a>
+
+                </div>
+                <div class="contact-right">
+                    <form >
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="text" placeholder="Subject" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Rosie. All rights reserved</p>
+        </div>
+     </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove('active-link');
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabname).classList.add('active-tab');
+        }
+    </script>
+    
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+</body>
+</html> 
